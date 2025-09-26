@@ -29,6 +29,7 @@ STEP-4: Multiply the two matrices to obtain the cipher text of length three.
 STEP-5: Combine all these groups to get the complete cipher text.
 
 ## PROGRAM 
+```
 import numpy as np
 text = input("Enter the plaintext message: ")
 key_string = input("Enter the key matrix (space-separated values, row-wise): ")
@@ -50,6 +51,7 @@ for row in result_matrix:
     for val in row:
         cipher_text += chr(val + ord('A'))
 print("Encrypted message:", cipher_text)
+```
 
 ## OUTPUT
 <img width="1920" height="1200" alt="image" src="https://github.com/user-attachments/assets/f37e3e22-f0a1-43d5-bce7-0d78fc15b019" />
